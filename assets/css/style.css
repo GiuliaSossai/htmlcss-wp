@@ -13,9 +13,9 @@ body {
 }
 
 .layover {
-  background-color: grey;
-  opacity: 0.3;
-  /*background-color: rgba(151, 145, 145, 0);*/
+  /*background-color: grey;
+  opacity: 0.3;*/
+  background-color: rgba(160, 160, 160, 0.3);
 }
 
 .clearfix::after {
