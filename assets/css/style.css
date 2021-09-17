@@ -8,8 +8,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.img {
+.img, .layover {
   border-radius: 10px;
+}
+
+.layover {
+  background-color: grey;
+  opacity: 0.3;
 }
 
 .clearfix::after {
@@ -81,9 +86,13 @@ nav li a:hover, nav li a:active {
 
 .img.yoga {
   min-height: 500px;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/img/banner.jpg");
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("/assets/img/banner.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.jumbotron .layover{
+  min-height: 500px;
 }
 
 .textarea {
@@ -95,15 +104,17 @@ nav li a:hover, nav li a:active {
 
 .textarea h3, .textarea p{
   color: white;
-  font-weight: 200;
+  opacity: 1;
 }
 
 .textarea h3 {
   font-size: 28px;
+  font-weight: 400;
 }
 
 .textarea p {
   font-size: 18px;
+  font-weight: 200;
 }
 
 /************* MAIN ***************/
@@ -131,9 +142,8 @@ main .title {
 .left-col, .middle-col, .right-col {
   float: left;
   min-height: 800px;
-  background-color: cornflowerblue;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  /*background-color: cornflowerblue;*/
+  margin-top: 0 20px;
 }
 
 .left-col, .right-col {
@@ -147,7 +157,7 @@ main .title {
 }
 
 main .content {
-  background-color: blue;
+  /*background-color: blue;*/
 }
 
 /*img top column*/
@@ -155,10 +165,15 @@ main .content {
 .content .top-col {
   height: 200px;
   margin-bottom: 10px;
+  
+}
+
+.content .layover {
+  height: 200px;
 }
 
 .top-col .img.growth {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/img-1.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/img-1.jpg);
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -166,7 +181,7 @@ main .content {
 }
 
 .top-col .img.freelancer {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/banner-2.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/banner-2.jpg);
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,7 +189,7 @@ main .content {
 }
 
 .top-col .img.team {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/img-3.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/img-3.jpg);
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,12 +200,31 @@ main .content {
 
 /*p bottom column*/
 
+.bottom-col h3 {
+  color: #6C6C6C;
+  margin: 10px 0;
+}
+
+.bottom-col p {
+  color: grey;
+  font-weight: 200;
+}
+
 
 
 /************* FOOTER ***************/
 
 .footer-content {
   height: 50px;
-  background-color: lightskyblue;
-  margin-top: 10px;
+  margin: 0 20px;
+}
+
+.footer-content h3 {
+  text-align: center;
+  line-height: 50px;
+  color: #6C6C6C;
+}
+
+#heart {
+  color: red;
 }
