@@ -68,7 +68,7 @@ nav li {
 }
 
 nav li a, nav li a:visited {
-  color: lightgrey;
+  color: grey;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -95,7 +95,7 @@ nav li a:hover, nav li a:active {
 
 .textarea h3, .textarea p{
   color: white;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .textarea h3 {
@@ -108,14 +108,25 @@ nav li a:hover, nav li a:active {
 
 /************* MAIN ***************/
 
-main .content {
-  background-color: blue;
-}
+/*main title*/
 
 main .title {
-  height: 100px;
-  background-color: cornflowerblue;
+  height: 80px;
+  margin: 30px 0;
 }
+
+.title h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.title p {
+  font-weight: 200;
+  color: grey;
+}
+
+/*main content clearfix*/
 
 .left-col, .middle-col, .right-col {
   float: left;
@@ -134,6 +145,47 @@ main .title {
   margin-left: 2%;
   margin-right: 2%;
 }
+
+main .content {
+  background-color: blue;
+}
+
+/*img top column*/
+
+.content .top-col {
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.top-col .img.growth {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/img-1.jpg);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-col .img.freelancer {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/banner-2.jpg);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-col .img.team {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/img/img-3.jpg);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*p bottom column*/
+
+
 
 /************* FOOTER ***************/
 
