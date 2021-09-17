@@ -15,6 +15,7 @@ body {
 .layover {
   background-color: grey;
   opacity: 0.3;
+  /*background-color: rgba(151, 145, 145, 0);*/
 }
 
 .clearfix::after {
@@ -38,7 +39,7 @@ header .top {
 .logo {
   width: 100px;
   height: 50px;
-  background-image: url(/assets/img/logo.png);
+  background-image: url("../css/img/logo.png");
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -86,7 +87,7 @@ nav li a:hover, nav li a:active {
 
 .img.yoga {
   min-height: 500px;
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("/assets/img/banner.jpg");
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -173,7 +174,7 @@ main .content {
 }
 
 .top-col .img.growth {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/img-1.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/img-1.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -181,7 +182,7 @@ main .content {
 }
 
 .top-col .img.freelancer {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/banner-2.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/banner-2.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -189,7 +190,7 @@ main .content {
 }
 
 .top-col .img.team {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url(/assets/img/img-3.jpg);
+  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/img-3.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
