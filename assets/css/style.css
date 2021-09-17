@@ -8,6 +8,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.img {
+  border-radius: 10px;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -24,7 +28,6 @@ body {
 
 header .top {
   height: 100px;
- 
 }
 
 .logo {
@@ -46,8 +49,12 @@ header .top {
   vertical-align: middle;
 }
 
+.top, .jumbotron {
+  margin-bottom: 20px;
+}
 
 /*nav menu*/
+
 nav {
  height: 50px;
  padding-top: 30px; 
@@ -71,13 +78,32 @@ nav li a:hover, nav li a:active {
 }
 
 /*jumbotron*/
-header .jumbotron {
-  height: 360px;
-  background-color: lightgreen;
+
+.img.yoga {
+  min-height: 500px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("/assets/img/banner.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.top, .jumbotron {
-  margin-bottom: 20px;
+.textarea {
+  width: 60%;
+  min-height: 100px;
+  padding-left: 50px;
+  padding-top: 25%;
+}
+
+.textarea h3, .textarea p{
+  color: white;
+  font-weight: 100;
+}
+
+.textarea h3 {
+  font-size: 28px;
+}
+
+.textarea p {
+  font-size: 18px;
 }
 
 /************* MAIN ***************/
