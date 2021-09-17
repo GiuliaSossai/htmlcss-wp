@@ -14,7 +14,7 @@ body {
 
 .layover {
   /*background-color: grey;
-  opacity: 0.3;*/
+  opacity: 0.3; così anche la textarea prenderebbe l'opacità*/
   background-color: rgba(104, 104, 104, 0.3);
 }
 
@@ -65,7 +65,7 @@ nav li {
   list-style-type: none;
   text-transform: uppercase;
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 nav li a, nav li a:visited {
@@ -82,7 +82,7 @@ nav li a:hover, nav li a:active {
 
 .img.yoga {
   min-height: 500px;
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -135,11 +135,12 @@ main .title {
 
 /*main content clearfix*/
 
+.content.clearfix {
+  padding-bottom: 30px;
+}
+
 .left-col, .middle-col, .right-col {
   float: left;
-  min-height: 800px;
-  /*background-color: cornflowerblue;*/
-  margin-top: 0 20px;
 }
 
 .left-col, .right-col {
@@ -152,15 +153,11 @@ main .title {
   margin-right: 2%;
 }
 
-main .content {
-  /*background-color: blue;*/
-}
-
 /*img top column*/
 
 .content .top-col {
   height: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 25px
   
 }
 
@@ -169,7 +166,7 @@ main .content {
 }
 
 .top-col .img.growth {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/img-1.jpg");
+  background-image: url("../img/img-1.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -177,7 +174,7 @@ main .content {
 }
 
 .top-col .img.freelancer {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/banner-2.jpg");
+  background-image: url("../img/banner-2.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,20 +182,19 @@ main .content {
 }
 
 .top-col .img.team {
-  background-image: /*linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),*/ url("../img/img-3.jpg");
+  background-image: url("../img/img-3.jpg");
   height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
-
-/*p bottom column*/
+/*bottom column*/
 
 .bottom-col h3 {
+  font-weight: 400;
   color: #6C6C6C;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 
 .bottom-col p {
@@ -206,18 +202,15 @@ main .content {
   font-weight: 200;
 }
 
-
-
 /************* FOOTER ***************/
 
 .footer-content {
-  height: 50px;
-  margin: 0 20px;
+  margin: 30px 0;
 }
 
 .footer-content h3 {
+  font-weight: 400;
   text-align: center;
-  line-height: 50px;
   color: #6C6C6C;
 }
 
