@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/************* HEADER ***************/
+
+header .top {
+  height: 100px;
+ 
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+  margin-top: -3px;
+  background-image: url(/assets/img/logo.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-line {
+  height: 50px;
+  margin-left: 30px;
+  border-left: 1px solid lightgrey;
+  display: inline-block;
+  vertical-align: middle;
+  
+}
+
+header .jumbotron {
+  height: 360px;
+  background-color: lightgreen;
+}
+
+.top, .jumbotron {
+  margin-bottom: 20px;
+}
+
+/************* MAIN ***************/
+
+main .content {
+  background-color: blue;
+}
+
+main .title {
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+.left-col, .middle-col, .right-col {
+  float: left;
+  min-height: 800px;
+  background-color: cornflowerblue;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left-col, .right-col {
+  width: 20%;
+}
+
+.middle-col {
+  width: 56%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/************* FOOTER ***************/
+
+.footer-content {
+  height: 50px;
+  background-color: lightskyblue;
+  margin-top: 10px;
+}
