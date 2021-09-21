@@ -10,9 +10,9 @@ body {
 
 /* utilities */
 
-.img, .layover {
+/*.img, .layover {
   border-radius: 10px;
-}
+}*/
 
 .layover {
   /*background-color: grey;
@@ -31,6 +31,14 @@ body {
   width: 80%;
   margin: 0 auto;
   background-color: white;
+}
+
+.img-box {
+  width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
 /************* HEADER ***************/
@@ -75,11 +83,10 @@ nav li a:hover, nav li a:active {
 
 /*jumbotron*/
 
-.img.yoga {
-  min-height: 500px;
+.jumbotron /*.img.yoga*/ {
+  /*min-height: 500px;*/
   background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-position: center;
+  
 }
 
 .jumbotron .layover{
@@ -151,7 +158,7 @@ main .title {
 
 /*img top column*/
 
-.content .top-col {
+.content .top-img {
   height: 200px;
   margin-bottom: 25px
   
@@ -161,28 +168,16 @@ main .title {
   height: 200px;
 }
 
-.top-col .img.growth {
+.left-col .top-img {
   background-image: url("../img/img-1.jpg");
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.top-col .img.freelancer {
+.middle-col .top-img {
   background-image: url("../img/banner-2.jpg");
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.top-col .img.team {
+.right-col .top-img {
   background-image: url("../img/img-3.jpg");
-  height: 200px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /*bottom column*/
